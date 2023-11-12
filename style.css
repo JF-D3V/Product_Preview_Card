@@ -1,0 +1,144 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
+
+/* GLOBAL PROPERTIES */
+
+:root {
+  /* cOLOUR */
+
+  --dark-green: hsl(158, 36%, 37%);
+  --col-cream: hsl(30, 38%, 92%);
+
+  --col-dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+
+  /* FONTS */
+
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Fraunces", "Times New Roman", Times, serif;
+}
+
+/* GLOBAL RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HELPER CLASS */
+
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* STYLING */
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  background-color: var(--col-cream);
+}
+.component {
+  max-width: 64rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.component-img {
+  background-image: url(/images/image-product-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.component-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+
+  padding: 3.8rem;
+
+  background-color: var(--white);
+}
+
+.component-body h3 {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--dark-gray-blue);
+}
+
+.component-body h2 {
+  font-family: var(--secondary-font);
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.component-body p {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--dark-gray-blue);
+}
+
+.current-price p {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-family: var(--secondary-font);
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--dark-green);
+}
+
+.current-price span {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: line-through;
+  color: var(--dark-gray-blue);
+}
+
+.btn-cart {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  background-color: var(--dark-green);
+  border: none;
+  padding: 1.2rem 2.8rem;
+  border-radius: 6px;
+}
+
+.btn-cart p {
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--white);
+}
