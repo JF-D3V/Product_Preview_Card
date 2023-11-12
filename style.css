@@ -142,3 +142,8 @@ img {
   font-weight: 500;
   color: var(--white);
 }
+
+.btn-cart:hover,
+.btn-cart:visited {
+  background-color: var(--col-dark-blue);
+}
