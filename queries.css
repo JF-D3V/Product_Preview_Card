@@ -1,0 +1,38 @@
+/* MOBILE SCREEN SIZE 720PX */
+
+@media (max-width: 45em) {
+  .grid-2-col {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    min-height: 100dvh;
+  }
+
+  .component {
+    margin: 2.4rem;
+  }
+
+  .component-img {
+    min-height: 28rem;
+    background-image: url(/images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .component-body {
+    padding: 2.6rem;
+  }
+
+  .component-body p {
+    font-size: 1.6rem;
+  }
+
+  .current-price p {
+    font-size: 3.8rem;
+  }
+
+  .current-price span {
+    font-size: 1.4rem;
+  }
+}

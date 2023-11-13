@@ -61,11 +61,14 @@ img {
 
   background-color: var(--col-cream);
 }
+
 .component {
   max-width: 64rem;
   border-radius: 10px;
+  margin: 4.8rem;
   overflow: hidden;
 }
+
 .component-img {
   background-image: url(/images/image-product-desktop.jpg);
   background-repeat: no-repeat;
@@ -95,7 +98,7 @@ img {
   font-family: var(--secondary-font);
   font-size: 3.6rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--col-dark-blue);
 }
 
 .component-body p {
@@ -120,7 +123,7 @@ img {
 .current-price span {
   font-family: var(--primary-font);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: line-through;
   color: var(--dark-gray-blue);
 }
@@ -132,7 +135,7 @@ img {
 
   background-color: var(--dark-green);
   border: none;
-  padding: 1.2rem 2.8rem;
+  padding: 1.4rem 2.8rem;
   border-radius: 6px;
 }
 
