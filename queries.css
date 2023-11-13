@@ -15,7 +15,7 @@
 
   .component-img {
     min-height: 28rem;
-    background-image: url(../images/image-product-mobile.jpg);
+    background-image: url(./images/image-product-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
