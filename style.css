@@ -70,7 +70,7 @@ img {
 }
 
 .component-img {
-  background-image: url(/images/image-product-desktop.jpg);
+  background-image: url(../images/image-product-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -132,11 +132,13 @@ img {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
 
   background-color: var(--dark-green);
   border: none;
   padding: 1.4rem 2.8rem;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .btn-cart p {
@@ -147,6 +149,6 @@ img {
 }
 
 .btn-cart:hover,
-.btn-cart:visited {
+.btn-cart:active {
   background-color: var(--col-dark-blue);
 }
